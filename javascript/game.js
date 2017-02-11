@@ -7,7 +7,7 @@ var countUp = 0;
 var countDown = 15;
 var blanks;
 var countUp = 0
-var left = 15;
+var left = 10;
 var collector = [];
 var letterBoard;
 
@@ -48,12 +48,15 @@ function Letter()
 
 		countUp++;
 		left--;
-		document.getElementById("counter").innerHTML="number of clicks: " + countUp;
-		document.getElementById("tester").innerHTML="number of lives left: " + left;
+		document.getElementById("counter").innerHTML= countUp;
+		document.getElementById("tester").innerHTML= left;
 		document.getElementById("answer").innerHTML=answerArray.join(" ");
 		document.getElementById("letters").innerHTML=collector.join(" ");
 
+		if (left == 0) { document.getElementById("hangman").src = "images/You_lose.png"; }
+
 	}
+
 }
 
 startUp();

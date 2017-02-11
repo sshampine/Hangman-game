@@ -8,22 +8,28 @@
 </head>
 <body>
 	<div class="wrapper">
+		<div class="title">
 		<h1>Hangman Word Guessing Game</h1>
-		<br>
-		<p>Enter a letter to guess the word.</p>
-		<br>
+		</div>
+		<div class="intro">
+		<p>Enter a letter in the field and click the Guess button to get started.</p>
 		<p>The category is 'thing'</p>
-		<br>
+		</div>
+		<div class="gameBoard">
 		<input id="letter" type="text">
-		<input type="button" class="button" value="letter" onclick="Letter()"/>
+		<input type="button" class="button" value="Guess" onclick="Letter()"/>
 		<br>
 		<p id="answer"></p>
 		<br>
-		<p id="counter"><p>
-		<br>
-		<p id="tester"></p>
-		<br>
 		<p>Used letters: <span id="letters"></span></p>
+		</div>
+		<div class="stats">
+		<p>Number of trys: <span id="counter"></span></p>
+		<br>
+		<p>Number of trys left: <span id="tester"></span></p>
+		</div>
+		<img id="hangman" class="hangman">
+		<!--<p>Used letters: <span id="letters"></span></p> -->
 		<script type="text/javascript" src="javascript/game.js"></script>
 	</div>
 </body>

@@ -54,3 +54,23 @@ p {
 	width: 300px;
 	float:none;
 }
+
+@media screen and (max-width: 640px) {
+
+	
+	.wrapper {
+		width: 630px;
+	}
+
+	.gameBoard {
+		float: none;
+		width: 100%
+		
+	}
+
+	.stats {
+		float: none;
+		width: 100%;
+	}
+
+}
